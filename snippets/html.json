@@ -1,0 +1,18 @@
+{
+	"SCRIPT SRC": {
+		"prefix": "ss",
+		"body": ["<script ${1:defer} src=\"$0\"></script>"]
+  },
+  "LINK HREF": {
+		"prefix": "lh",
+		"body": ["<link rel=\"${1:stylesheet}\" href=\"$0\" />"]
+  },
+  "SPAN": {
+    "prefix": "s",
+		"body": ["<span>$0</span>"]
+  },
+  "DIV": {
+    "prefix": "d",
+		"body": ["<div>$0</div>"]
+  },
+}

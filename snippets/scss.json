@@ -1,0 +1,242 @@
+{
+  "DISPLAY NONE": {
+    "prefix": "dn",
+    "body": ["display: none;$0"]
+  },
+  "DISPLAY BLOCK": {
+    "prefix": "db",
+    "body": ["display: block;$0"]
+  },
+
+  "DISPLAY INLINE": {
+    "prefix": "di",
+    "body": ["display: inline;$0"]
+  },
+  "DISPLAY INLINE BLOCK": {
+    "prefix": "dib",
+    "body": ["display: inline-block;$0"]
+  },
+  "DISPLAY INLINE FLEX": {
+    "prefix": "dif",
+    "body": ["display: inline-flex;$0"]
+  },
+  
+  "DISPLAY FLEX": {
+    "prefix": "df",
+    "body": ["display: flex;$0"]
+  },
+  "ALIGN ITEMS": {
+    "prefix": "ai",
+    "body": ["align-items: $0;"]
+  },
+  "JUSTIFY CONTENT": {
+    "prefix": "jc",
+    "body": ["justify-content: $0;"]
+  },
+  "DISPLAY GRID": {
+    "prefix": "dg",
+    "body": ["display: grid;$0"]
+  },
+
+  "POSITION STATIC": {
+    "prefix": "ps",
+    "body": ["position: static;$0"]
+  },
+  "POSITION RELATIVE": {
+    "prefix": "pr",
+    "body": ["position: relative;$0"]
+  },
+  "POSITION ABSOLUTE": {
+    "prefix": "pa",
+    "body": ["position: absolute;$0"]
+  },
+  "POSITION FIXED": {
+    "prefix": "pf",
+    "body": ["position: fixed;$0"]
+  },
+
+  "MARGIN": {
+    "prefix": "m",
+    "body": ["margin: $0;"]
+  },
+  "MARGIN ORIGIN": {
+    "prefix": "mo",
+    "body": ["margin: /*Y*/${1:0} /*X*/${0:0};"]
+  },
+  "MARGIN EDGE": {
+    "prefix": "me",
+    "body": ["margin: /*T*/${1:0} /*R*/${2:0} /*B*/${3:0} /*L*/${0:0};"]
+  },
+  "PADDING": {
+    "prefix": "p",
+    "body": ["padding: $0;"]
+  },
+  "PADDING ORIGIN": {
+    "prefix": "po",
+    "body": ["padding: /*Y*/${1:0} /*X*/${0:0};"]
+  },
+  "PADDING EDGE": {
+    "prefix": "pe",
+    "body": ["padding: /*T*/${1:0} /*R*/${2:0} /*B*/${3:0} /*L*/${0:0};"]
+  },
+
+  "HEIGHT": {
+    "prefix": "h",
+    "body": ["height: ${1:100%};$0"]
+  },
+  "MIN HEIGHT": {
+    "prefix": "mnh",
+    "body": ["min-height: $0;"]
+  },
+  "MAX HEIGHT": {
+    "prefix": "mxh",
+    "body": ["max-height: $0;"]
+  },
+  "WIDTH": {
+    "prefix": "w",
+    "body": ["width: ${1:100%};$0"]
+  },
+  "MIN WIDTH": {
+    "prefix": "mnw",
+    "body": ["min-width: $0;"]
+  },
+  "MAX WIDTH": {
+    "prefix": "mxw",
+    "body": ["max-width: $0;"]
+  },
+
+  "LINE HEIGHT": {
+    "description": "Implement in wrapper for inline/text alongside height prop",
+    "prefix": "lh",
+    "body": ["line-height: $0;"]
+  },
+  "VERTICAL ALIGN": {
+    "description": "Implement in target for inline/text",
+    "prefix": "va",
+    "body": ["vertical-align: $0;"]
+  },
+  "TEXT ALIGHT": {
+    "description": "Implement in wrapper for inline/text",
+    "prefix": "ta",
+    "body": ["text-align: $0;"]
+  },
+
+  "OVERFLOW": {
+    "prefix": "of",
+    "body": ["overflow: ${0:hidden};"]
+  },
+  "OPACITY": {
+    "prefix": "o",
+    "body": ["opacity: ${0:1};"]
+  },
+
+  "BACKGROUND": {
+    "prefix": "bg",
+    "body": ["background: $0;"]
+  },
+  "BACKGROUND ALPHA": {
+    "prefix": "bga",
+    "body": ["background: rgba(${1:255},${2:255},${3:255}, $0);"]
+  },
+  "BACKGROUND GRADIENT": {
+    "prefix": "bgg",
+    "body": ["background: linear-gradient(${0:0}deg, /*start*/$1, /*final*/$0);"]
+  },
+  "BACKGROUND URL": {
+    "prefix": "bgu",
+    "body": ["background: url($1) ${2:center}/${3:cover} ${0:no-repeat};"]
+  },
+  "BACKGROUND POSITION": {
+    "prefix": "bgp",
+    "body": ["background-position: $0;"]
+  },
+  "BACKGROUND SIZE": {
+    "prefix": "bgs",
+    "body": ["background-size: $0;"]
+  },
+  "BACKGROUND REPEAT": {
+    "prefix": "bgr",
+    "body": ["background-repeat: $0;"]
+  },
+
+  "BORDER BOX": {
+    "description": "Includes border and padding in size value",
+    "prefix": "bb",
+    "body": ["box-sizing: border-box;"]
+  },
+  "BORDER": {
+    "prefix": "bd",
+    "body": ["border: ${1:1px} ${2:solid} ${0:#fff};"]
+  },
+  "BORDER RADIUS": {
+    "prefix": "br",
+    "body": ["border-radius: $0;"]
+  },
+  "BOX SHADOW": {
+    "prefix": "bs",
+    "body": ["box-shadow: /*R*/$1 /*B*/$2 /*grad*/$3 /*extra*/$4 rgba(${5:0},${6:0},${7:0}, ${0:.5});"]
+  },
+
+  "COLOR": {
+    "prefix": "cl",
+    "body": ["color: $0;"]
+  },
+  "FONT FAMILY": {
+    "prefix": "ff",
+    "body": ["font-family: '$0';"]
+  },
+  "FONT SIZE": {
+    "prefix": "fs",
+    "body": ["font-size: $0;"]
+  },
+  "LETTER SPACING": {
+    "prefix": "ls",
+    "body": ["letter-spacing: $0;"]
+  },
+  
+  "FONT STYLE ITALIC": {
+    "prefix": "fsi",
+    "body": ["font-style: italic;$0"]
+  },
+  "TEXT DECORATION UNDERLINE": {
+    "prefix": "tdu",
+    "body": ["text-decoration: underline;$0"]
+  },
+  "TEXT TRANSFORM UPPERCASE": {
+    "prefix": "ttu",
+    "body": ["text-transform: uppercase;$0"]
+  },
+
+  "CURSOR DEFAULT": {
+    "prefix": "cd",
+    "body": ["cursor: default;$0"]
+  },
+  "CURSOR POINTER": {
+    "prefix": "cp",
+    "body": ["cursor: pointer;$0"]
+  },
+
+  "POINTER EVENTS": {
+    "description": "Disable events",
+    "prefix": "pin",
+    "body": ["pointer-events: none;$0"]
+  },
+  "USER SELECT NONE": {
+    "description": "Disable text interactions",
+    "prefix": "usn",
+    "body": ["user-select: none;$0"]
+  },
+
+  "TRANSFORM ORIGIN": {
+    "prefix": "to",
+    "body": ["transform-origin: /*X*/${1:50}% /*Y*/${0:50}%;"]
+  },
+  "TRANSFORM": {
+    "prefix": "tf",
+    "body": ["transform: ${1:scale}($0);"]
+  },
+  "TRANSITION": {
+    "prefix": "tr",
+    "body": ["transition: ${1:all} ${2:ease} ${3:1s};"]
+  },
+}

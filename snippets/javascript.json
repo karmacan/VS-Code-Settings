@@ -1,0 +1,300 @@
+{
+  "CONSOLE LOG": {
+    "prefix": "cl",
+    "body": ["console.log($0);"]
+  },
+  "CONSTRUCTOR NAME": {
+    "prefix": ".cn",
+    "body": [".constructor.name$0"]
+  },
+
+  "FOR EACH": {
+    "prefix": ".fe",
+    "body": [".forEach(($1) => {$0});"]
+  },
+
+  /* DOM */
+  "DOCUMENT": {
+    "prefix": "d",
+    "body": ["document$0"]
+  },
+
+  "QUERY SELECTOR": {
+    "prefix": ".qs",
+    "body": [".querySelector('$0')"]
+  },
+  "DOCUMENT QUERY SELECTOR": {
+    "prefix": "dqs",
+    "body": ["document.querySelector('$0')"]
+  },
+  "WINDOW COMPUTED STYLE": {
+    "prefix": "wcs",
+    "body": ["window.getComputedStyle($0)"]
+  },
+
+  "PARENT ELEMENT": {
+    "prefix": ".pe",
+    "body": [".parentElement"]
+  },
+  "FIRST ELEMENT CHILD": {
+    "prefix": ".fec",
+    "body": [".firstElementChild"]
+  },
+  "LAST ELEMENT CHILD": {
+    "prefix": ".lec",
+    "body": [".lastElementChild"]
+  },
+  "NEXT ELEMENT SIBLING": {
+    "prefix": ".nes",
+    "body": [".nextElementSibling"]
+  },
+  "PREVIOUS ELEMENT SIBLING": {
+    "prefix": ".pes",
+    "body": [".previousElementSibling"]
+  },
+
+  "CLASS LIST": {
+    "prefix": ".cl",
+    "body": [".classList"]
+  },
+
+  "ADD EVENT LISTENER": {
+    "prefix": ".ael",
+    "body": [".addEventListener('$1', ev => {$0});"]
+  },
+  "DOCUMENT ADD EVENT": {
+    "prefix": "dae",
+    "body": ["document.addEventListener('$1', ev => {$0});"]
+  },
+  "EVENT TARGET": {
+    "prefix": "et",
+    "body": ["ev.target$0"]
+  },
+  "EVENT PREVENT DEFAULT": {
+    "prefix": "epd",
+    "body": ["ev.preventDefault();$0"]
+  },
+  "EVENT STOP PROPAGATION": {
+    "prefix": "esp",
+    "body": ["ev.stopPropagation();$0"]
+  },
+
+  /* MODULE */
+  "REQUIRE": {
+    "prefix": "r",
+    "body": ["require('$0');"]
+  },
+  "REQUIRE EQUAL": {
+    "prefix": "re",
+    "body": ["${1:const} $2 = require('$0');"]
+  },
+  "MODULE EXPORTS": {
+    "prefix": "me",
+    "body": ["module.exports = {", "  $0", "};"]
+  },
+
+  /* REACT */
+  "IMPORT": {
+    "prefix": "i",
+    "body": ["import '$0';"]
+  },
+  "IMPORT REACT": {
+    "prefix": "ir",
+    "body": ["import React, { Component } from 'react';", "$0"]
+  },
+  "IMPORT REACT FRAGMENT": {
+    "prefix": "irf",
+    "body": ["import { Fragment } from 'react';", "$0"]
+  },
+  "IMPORT PROP TYPES": {
+    "prefix": "ipt",
+    "body": ["import PropTypes from 'prop-types';", "$0"]
+  },
+  "IMPORT SHORT ID": {
+    "prefix": "isi",
+    "body": ["import shortid from 'shortid';", "$0"]
+  },
+  "IMPORT JQUERY": {
+    "prefix": "ijq",
+    "body": ["import $ from 'jquery';", "$0"]
+  },
+  "IMPORT FROM MODULE": {
+    "prefix": "ifm",
+    "body": ["import $1 from '$0';"]
+  },
+
+  "EXPORT DEFAULT CLASS": {
+    "prefix": "edc",
+    "body": ["export default class ${1:Class} {", "  $0", "}"]
+  },
+  "EXPORT DEFAULT": {
+    "prefix": "ed",
+    "body": ["export default $0;"]
+  },
+
+  "PROP TYPES": {
+    "prefix": "pt",
+    "body": ["PropTypes$0"]
+  },
+  "SHORT ID GENERATE": {
+    "prefix": "sig",
+    "body": ["shortid.generate()$0"]
+  },
+
+  "FUNCTIONAL COMPONENT": {
+    "prefix": "fc",
+    "body": [
+      "import React from 'react';",
+      "import './${1:Compart}.css';",
+      "",
+      "export default function ${1:Compart}(props) {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "}"
+    ]
+  },
+  "FUNCTIONAL COMPONENT PROP TYPES": {
+    "prefix": "fcpt",
+    "body": [
+      "import React from 'react';",
+      "import './${1:Compart}.css';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "${1:Compart}.propTypes = {};",
+      "",
+      "export default function ${1:Compart}(props) {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "}"
+    ]
+  },
+  "REACT USE STATE": {
+    "prefix": "rus",
+    "body": [
+      "const [state, setState] = React.useState({",
+      "  refs: {},",
+      "  $0",
+      "});"
+    ]
+  },
+  "REACT USE EFFECT": {
+    "prefix": "rue",
+    "body": [
+      "/// componentDidMount / componentDidUpdate",
+      "React.useEffect(() => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "REACT USE REF": {
+    "prefix": "rur",
+    "body": ["React.useRef(),$0"]
+  },
+  "REACT CREATE REF": {
+    "prefix": "rcr",
+    "body": ["React.createRef(),$0"]
+  },
+
+  "CLASS COMPONENT": {
+    "prefix": "cc",
+    "body": [
+      "import React, {Component} from 'react';",
+      "import './${1:Compart}.css';",
+      "",
+      "export default class ${1:Compart} extends Component {",
+      "  state = {",
+      "    refs: {},",
+      "  }",
+      "",
+      "  render() {",
+      "    const {props, state} = this;",
+      "    return (",
+      "      <div>",
+      "        $0",
+      "      </div>",
+      "    );",
+      "  }",
+      "}"
+    ]
+  },
+  "CLASS COMPONENT PROP TYPES": {
+    "prefix": "ccpt",
+    "body": [
+      "import React, {Component} from 'react';",
+      "import './${1:Compart}.css';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "export default class ${1:Compart} extends Component {",
+      "  static propTypes = {}",
+      "",
+      "  state = {",
+      "    refs: {},",
+      "  }",
+      "",
+      "  render() {",
+      "    const {props, state} = this;",
+      "    return (",
+      "      <div>",
+      "        $0",
+      "      </div>",
+      "    );",
+      "  }",
+      "}"
+    ]
+  },
+  "DEFAULT PROPS": {
+    "prefix": "dp",
+    "body": ["static defaultProps: {", "  $0", "}"]
+  },
+  "CONSTRUCTOR SUPER": {
+    "prefix": "cs",
+    "body": ["constructor(props) {", "  super(props);", "  $0", "}"]
+  },
+  "COMPONENT DID MOUNT": {
+    "prefix": "cdm",
+    "body": ["componentDidMount() {", "  $0", "}"]
+  },
+  "COMPONENT DID UPDATE": {
+    "prefix": "cdu",
+    "body": ["componentDidUpdate() {", "  $0", "}"]
+  },
+  "THIS STATE": {
+    "prefix": "ts",
+    "body": ["this.state.$0"]
+  },
+  "STATE REFS": {
+    "prefix": "sr",
+    "body": ["state.refs.$0"]
+  },
+  "THIS STATE REFS": {
+    "prefix": "tsr",
+    "body": ["this.state.refs.$0"]
+  },
+  "THIS SET STATE": {
+    "prefix": "tss",
+    "body": ["this.setState({$0});"]
+  },
+  "THIS PROPS": {
+    "prefix": "tp",
+    "body": ["this.props.$0"]
+  },
+  "DESTRUCT THIS": {
+    "prefix": "dt",
+    "body": ["const {props, state} = this;$0"]
+  },
+
+  "JSX SPAN": {
+    "prefix": "xs",
+    "body": ["<span>$0</span>"]
+  },
+  "JSX DIV": {
+    "prefix": "xd",
+    "body": ["<div>$0</div>"]
+  }
+}

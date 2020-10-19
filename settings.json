@@ -1,0 +1,129 @@
+{
+  /// SHORTHANDS
+  // New window: Cmd + Shift + N
+  // Save all: Cmd + Alt + S
+  // * Change all occurrences: Ctrl + Shift + A
+  // * Close others: Ctrl + Alt + 1
+  // * Close all saved: Ctrl + Alt + 0
+  // * cursorHome: Ctrl + LeftArrow
+  // * cursorEnd: Ctrl + RightArrow
+  // * Delete Line: Ctrl + Delete
+  // *Ext* Convert tab 4 to 2: Ctrl + Shift + 2
+
+  // Terminal shell
+  "terminal.integrated.shell.windows": "C:\\_Mainware\\Git\\bin\\bash.exe",
+  // Terminal style
+  "terminal.integrated.rendererType": "dom",
+  // Display settings as
+  "workbench.settings.editor": "json",
+  // Weclome page
+  "workbench.startupEditor": "newUntitledFile",
+  // Hide top path row
+  "breadcrumbs.enabled": false,
+  // Zoom level
+  "window.zoomLevel": -0.1,
+  // Tab size
+  "editor.tabSize": 2,
+  // Ignore progects .ediorconfig indentation
+  "editor.detectIndentation": false,
+  // Hide top-right file minimap
+  "editor.minimap.enabled": false,
+  // Standrd comment color
+  "editor.tokenColorCustomizations": {
+    "[Default Dark+]": {
+      // Disable semantic highlighting (return console.log and module.exports hightlight)
+      "semanticHighlighting": false,
+      // Comment color
+      "comments": "#444444"
+    }
+  },
+  // Ask delete conformation
+  "explorer.confirmDelete": true,
+  // Disable empty folders merge/collapse
+  "explorer.compactFolders": false,
+  // Ask change inputs on file rename (always/prompt/never)
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  // Quick Save
+  "files.autoSave": "off",
+  /// Intellisense
+  // Set seggestion intellisense list priority
+  "editor.suggestSelection": "first",
+  // Put user smippets in suggestion top
+  // "editor.snippetSuggestions": "top",
+  /// Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    // "javascript": "html"
+  },
+  "emmet.excludeLanguages": [
+    // "javascript"
+  ],
+  /// Formatter [Shift + Alt + F]
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  // Disable auto add space after function keyword
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSpacing": false,
+  /// EXTENTIONS
+  // Pair Brackets
+  "bracketPairColorizer.showHorizontalScopeLine": false,
+  "bracketPairColorizer.showVerticalScopeLine": false,
+  "better-comments.tags": [
+    /// Title / Important
+    {"tag": "/", "color": "#5a8a41"},
+    //? Question / Query
+    {"tag": "?", "color": "#4CAF50"},
+    //* Info
+    {"tag": "*", "color": "#80DEEA"},
+    //. Case
+    {"tag": ".", "color": "#03A9F4"},
+    //+ Add / Feature
+    {"tag": "+", "color": "#FFB560"},
+    //: Task / Todo
+    {"tag": ":", "color": "#FF8C00"},
+    //- Rewrote / Deprecated
+    {"tag": "-", "color": "#851515"},
+    //! Problem / Warning
+    {"tag": "!", "color": "#FF2D00"},
+    //| Crunch
+    {"tag": "|", "color": "#F48FB1"}
+  ],
+  // Live Server
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  // Sass Compiler
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/public/css/built"
+    }
+  ],
+  // Language Support For Java
+  "java.semanticHighlighting.enabled": false,
+  "java.configuration.checkProjectSettingsExclusions": false,
+}
