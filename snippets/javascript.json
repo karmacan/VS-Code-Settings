@@ -142,7 +142,7 @@
   },
 
   "FUNCTIONAL COMPONENT": {
-    "prefix": "fc",
+    "prefix": "rfc",
     "body": [
       "import React from 'react';",
       "import './${1:Compart}.css';",
@@ -157,7 +157,7 @@
     ]
   },
   "FUNCTIONAL COMPONENT PROP TYPES": {
-    "prefix": "fcpt",
+    "prefix": "rfcpt",
     "body": [
       "import React from 'react';",
       "import './${1:Compart}.css';",
@@ -202,7 +202,7 @@
   },
 
   "CLASS COMPONENT": {
-    "prefix": "cc",
+    "prefix": "rcc",
     "body": [
       "import React, {Component} from 'react';",
       "import './${1:Compart}.css';",
@@ -214,6 +214,7 @@
       "",
       "  render() {",
       "    const {props, state} = this;",
+      "",
       "    return (",
       "      <div>",
       "        $0",
@@ -224,7 +225,7 @@
     ]
   },
   "CLASS COMPONENT PROP TYPES": {
-    "prefix": "ccpt",
+    "prefix": "rccpt",
     "body": [
       "import React, {Component} from 'react';",
       "import './${1:Compart}.css';",
@@ -239,6 +240,7 @@
       "",
       "  render() {",
       "    const {props, state} = this;",
+      "",
       "    return (",
       "      <div>",
       "        $0",
